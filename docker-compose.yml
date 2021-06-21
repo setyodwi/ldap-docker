@@ -41,9 +41,9 @@ services:
       - LDAP_READONLY_USER_PASSWORD=readonlyuser
       - LDAP_GROUPS_DN=ou=group,dc=kuncimasuk,dc=com
       - LDAP_USERS_DN=ou=people,dc=kuncimasuk,dc=com
-      - LDAP_TLS_CRT_FILENAME: cert.pem
-      - LDAP_TLS_KEY_FILENAME: privkey.pem
-      - LDAP_TLS_CA_CRT_FILENAME: chain.pem
+      - LDAP_TLS_CRT_FILENAME= cert.pem
+      - LDAP_TLS_KEY_FILENAME= privkey.pem
+      - LDAP_TLS_CA_CRT_FILENAME= chain.pem
       - LDAP_TLS_VERIFY_CLIENT=never
 
     command: "--loglevel info --copy-service"
